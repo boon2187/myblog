@@ -34,14 +34,24 @@ export default async function Blogs() {
 
   return (
     <div>
-      <h1 className="text-2xl">My Blog</h1>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <Link href={`/blog/${post.slug}`}>{post.frontmatter.title}</Link>
-          </li>
-        ))}
-      </ul>
+      <div>
+        <div>
+          <h2 className="text-2xl">My Blog</h2>
+          <div>
+            {posts.map((post) => (
+              <article key={post.slug}>
+                <div>
+                  <h3>
+                    <Link href={`/blog/${post.slug}`}>
+                      {post.frontmatter.title}
+                    </Link>
+                  </h3>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

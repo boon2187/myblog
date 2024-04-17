@@ -21,3 +21,7 @@
     text-wrap: balance;
   }
 }
+
+body {
+  background-color: #000000; /* 背景色をここで指定 */
+}

@@ -58,6 +58,7 @@ export default async function Blogs() {
                       </div>
                     </div>
                     <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400">
+                      {/* 記事タイトルへのリンク */}
                       <Link
                         href={`/blog/${post.slug}`}
                         className="mt-3 text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400"
@@ -65,6 +66,13 @@ export default async function Blogs() {
                         {post.frontmatter.title}
                       </Link>
                     </h3>
+                    {/* 記事の説明文（description）を表示 */}
+                    <p
+                      className="mt-5 line-clamp-3 text-sm leading-6 text-gray-400"
+                      dangerouslySetInnerHTML={{
+                        __html: `${post.frontmatter.description}`,
+                      }}
+                    ></p>
                   </div>
                 </article>
               ))}

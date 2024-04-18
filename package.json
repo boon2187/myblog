@@ -14,9 +14,12 @@
     "react": "^18",
     "react-dom": "^18",
     "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.79",
     "eslint": "^8",
     "eslint-config-next": "14.2.1",
     "postcss": "^8",

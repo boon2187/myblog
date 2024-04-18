@@ -51,6 +51,12 @@ export default async function Blogs() {
                   className="flex max-w-xl flex-col items-start justify-between"
                 >
                   <div className="group relative">
+                    {/* 日付の表示 */}
+                    <div className="flex items-center gap-x-4 text-xs">
+                      <div className="text-gray-500">
+                        {new Date(post.frontmatter.date).toLocaleDateString()}
+                      </div>
+                    </div>
                     <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400">
                       <Link
                         href={`/blog/${post.slug}`}

@@ -36,13 +36,13 @@ export default async function Blogs() {
   return (
     <>
       <Head>
-        <title>My Blog</title>
+        <title>これはトップページ</title>
       </Head>
       <div className="bg-black py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              My Blog
+              これはトップページ
             </h2>
             <div className="mt-10 space-y-16 border-t border-gray-300 pt-10 sm:mt-16 sm:pt-16">
               {posts.map((post) => (

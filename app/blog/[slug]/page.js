@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkHtml from "remark-html";
+import "./content.css";
 
 // ブログ記事ページ
 export default async function BlogPage({ params }) {
@@ -23,9 +24,13 @@ export default async function BlogPage({ params }) {
   const contentHtml = processedContent.toString(); // ブログ記事のHTML
 
   return (
-    <div>
-      <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }}></div>
+    <div className="bg-black px-6 py-32 lg:px-8">
+      <div className="mx-auto max-w-3xl text-base leading-7 text-gray-200">
+        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
+          {title}
+        </h1>
+        <div dangerouslySetInnerHTML={{ __html: contentHtml }}></div>
+      </div>
     </div>
   );
 }

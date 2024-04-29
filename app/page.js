@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Head from "next/head";
 
-export default async function Blogs() {
+export default async function HomePage() {
   // contentディレクトリ内のマークダウンファイル一覧を取得
   // postsDirectoryは './conent/'
   const postsDirectory = path.join(process.cwd(), "content");

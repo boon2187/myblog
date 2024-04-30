@@ -9,6 +9,6 @@ tags: ["Next.js"]
 
 flutter-newbie.com に書くようなことは、そのうちこちらで書いていきたい。
 
-![test-image](../public/images/image-first.jpg)
+![test-image](/images/image-first.jpg)
 
 まずは最初の一歩。

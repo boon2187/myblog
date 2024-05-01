@@ -30,3 +30,9 @@ li {
 a {
   @apply text-indigo-600;
 }
+
+img {
+  @apply px-8;
+  @apply mx-auto;
+  @apply w-96;
+}

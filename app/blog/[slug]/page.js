@@ -33,7 +33,9 @@ export default async function BlogPage({ params }) {
 
   return (
     <div className="bg-black px-6 py-32 lg:px-8">
-      <EyecatchImage markdown={fileContents} />
+      <div className="mx-auto w-4/5">
+        <EyecatchImage markdown={fileContents} />
+      </div>
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-200">
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
           {title}

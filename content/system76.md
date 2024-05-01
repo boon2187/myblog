@@ -1,6 +1,7 @@
 ---
 title: "System76のパソコンを買いました。"
 date: 2024-04-12
+image: "/images/eyecatch_System76.png"
 description: "System76のLinuxプレインストールパソコンを買いました。"
 tags: ["linux", "system76", "pop_os"]
 ---

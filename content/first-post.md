@@ -1,6 +1,7 @@
 ---
 title: "First Post"
 date: 2024-04-10
+image: "/images/03_System76.png"
 description: "Next.jsを使ってブログを書くことに挑戦"
 tags: ["Next.js"]
 ---

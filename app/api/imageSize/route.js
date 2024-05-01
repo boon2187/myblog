@@ -1,14 +1,14 @@
 import axios from "axios";
 import sizeOf from "image-size";
 
-export async function post(req, res) {
+export async function POST(req, res) {
   try {
     const { imageUrl } = req.body;
     const response = await axios.get(imageUrl, {
       responseType: "arraybuffer",
     });
     const dimensions = sizeOf(response.data);
-    return res
+    res
       .status(200)
       .json({ width: dimensions.width, height: dimensions.height });
   } catch (error) {

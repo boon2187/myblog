@@ -1,5 +1,5 @@
 ---
-title: "Fist Post"
+title: "First Post"
 date: 2024-04-10
 description: "Next.jsを使ってブログを書くことに挑戦"
 tags: ["Next.js"]

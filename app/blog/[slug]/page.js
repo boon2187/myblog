@@ -5,7 +5,7 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkHtml from "remark-html";
 import "./content.css";
-import EyecatchImage from "../../../components/EyecatchImage";
+import EyecatchImage from "../../../features/blog/components/EyecatchImage";
 
 // ブログ記事ページ
 export default async function BlogPage({ params }) {

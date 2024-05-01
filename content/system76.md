@@ -7,6 +7,7 @@ tags: ["linux", "system76", "pop_os"]
 
 ## System76 ってどんなメーカー？
 
+![test-image](/images/01_System76.png)
 System76 とは、アメリカのコロラド州デンバーにある Linux がプレインストールされた PC の製造業者です。
 日本からでも、公式サイトを通じて、これらのパソコンを購入することが可能です。
 
@@ -18,7 +19,9 @@ System76 とは、アメリカのコロラド州デンバーにある Linux が�
 
 System76 の「Lemur Pro」は高性能でほぼ完璧に近い Linux ノート PC：製品レビュー
 
-## System76 購入のきっかけ
+## System76 購入のきっかけ!
+
+![test-image](/images/02_System76.png)
 
 そもそも Dell の Latitude 5480 からこの Lemur Pro に乗り換えようとしたきっかけは、Flutter の勉強中に起きた、ビルド１０分間事件でしたｗ
 
@@ -33,6 +36,8 @@ Mac のスピード（しかも、M1 Mac）に感動したので M2 の Mac を�
 なので、それなりの Windows マシンを購入して、Linux に置き換えちゃおうかともおもったのですが、それなら、ちょっと冒険だけど、前から気になっていた System76 の Lemur Pro を買うことに決めちゃいました
 
 ## 注文してから製品が届くまで
+
+![test-image](/images/03_System76.png)
 
 System76 の公式サイトで購入することが可能です。
 購入プロセスは海外にも対応しており、日本を含む多くの国への販売・出荷が可能になっています。
@@ -55,6 +60,8 @@ Pop!\_ OS の設定も日本語で直感的であるため、とくに困るこ�
 
 ## メインマシンとして使用してみて
 
+![test-image](/images/04_System76.png)
+
 もう、快適の一言です。
 
 Flutter のビルドは１分もかからないし、VSCode はもちろん、いま話題の AI エディタの Cursor も使えて快適です。
@@ -67,6 +74,8 @@ ONLYOFFICE という Office アプリには PowerPont もびっくりの高性�
 もう、これが唯一 Mac を使う場面となってきました。
 
 ## おまけ
+
+![test-image](/images/05_System76.png)
 
 Mac が高いからと System76 の Lemur Pro にしたのですが、
 メモリを 40GB にしたりしたためか、クレジットカードの請求書をみたら Mac より少し高くなってましたｗ

@@ -3,19 +3,19 @@ p {
 }
 
 h1 {
-  @apply mt-6 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl;
+  @apply mt-16 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl;
 }
 
 h2 {
-  @apply mt-8 text-2xl font-bold tracking-tight text-gray-100;
+  @apply mt-16 text-2xl font-bold tracking-tight text-gray-100;
 }
 
 h3 {
-  @apply mt-6 text-xl font-bold tracking-tight text-gray-100;
+  @apply mt-11 text-xl font-bold tracking-tight text-gray-100;
 }
 
 h4 {
-  @apply mt-6 text-lg font-bold tracking-tight text-gray-100;
+  @apply mt-11 text-lg font-bold tracking-tight text-gray-100;
 }
 
 ul,
@@ -32,7 +32,5 @@ a {
 }
 
 img {
-  @apply px-8;
-  @apply mx-auto;
-  @apply w-96;
+  @apply px-8 mx-auto my-11 w-96;
 }

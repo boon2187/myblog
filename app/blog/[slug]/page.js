@@ -13,11 +13,18 @@ export default async function BlogPage({ params }) {
   const { slug } = params;
   const filePath = path.join(process.cwd(), "content", `${slug}.md`);
 
+  // ファイルが存在するかチェック
+  if (!fs.existsSync(filePath)) {
+    // ファイルが存在しない場合の処理
+    console.error(`File not found: ${filePath}`);
+    return;
+  }
+
   // ファイルの中身を取得
   const fileContents = fs.readFileSync(filePath, "utf8");
   // frontmatterからdateとcontentを取得
   const { data, content } = matter(fileContents);
-  const title = data.title; // ブログ記事のタイトル
+  const title = data.title; // ブログ記事のタイトル１４
   const processedContent = await unified()
     .use(remarkParse)
     .use(remarkHtml)

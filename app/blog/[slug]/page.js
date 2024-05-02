@@ -5,7 +5,7 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkHtml from "remark-html";
 import "./content.css";
-import EyecatchImage from "../../../features/blog/components/EyecatchImage";
+import MarkdownImage from "../../../features/blog/components/MarkdownImage";
 
 // ブログ記事ページ
 export default async function BlogPage({ params }) {
@@ -46,7 +46,7 @@ export default async function BlogPage({ params }) {
           {title}
         </h1>
         <div className="mx-auto">
-          <EyecatchImage markdown={fileContents} />
+          <MarkdownImage markdown={fileContents} width={1024} height={1024} />
         </div>
         <p className="text-right">{date}</p>
         <div dangerouslySetInnerHTML={{ __html: contentHtml }}></div>

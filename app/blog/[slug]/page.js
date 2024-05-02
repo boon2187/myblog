@@ -25,6 +25,7 @@ export default async function BlogPage({ params }) {
   // frontmatterからdateとcontentを取得
   const { data, content } = matter(fileContents);
   const title = data.title; // ブログ記事のタイトル
+  const imageUrl = data.image; // ブログ記事のアイキャッチ画像
   const date = new Date(data.date)
     .toLocaleDateString("ja-JP", {
       year: "numeric",
@@ -46,7 +47,7 @@ export default async function BlogPage({ params }) {
           {title}
         </h1>
         <div className="mx-auto">
-          <MarkdownImage markdown={fileContents} width={1024} height={1024} />
+          <MarkdownImage imageUrl={imageUrl} width={1024} height={1024} />
         </div>
         <p className="text-right">{date}</p>
         <div dangerouslySetInnerHTML={{ __html: contentHtml }}></div>

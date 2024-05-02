@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import MarkdownImage from "./MarkdownImage";
 
-export default function BlogCard({ posts, fileContents }) {
+export default function BlogCard({ posts }) {
   return (
     <div className="mt-10 space-y-16 border-t border-gray-300 pt-10 sm:mt-16 sm:pt-16">
       {posts.map((post) => (
@@ -10,9 +10,12 @@ export default function BlogCard({ posts, fileContents }) {
           key={post.slug}
           className="flex max-w-xl flex-col items-start justify-between"
         >
-          {/* 試しにアイキャッチ */}
           <div>
-            <MarkdownImage markdown={fileContents} width={1024} height={1024} />
+            <MarkdownImage
+              imageUrl={post.frontmatter.image}
+              width={1024}
+              height={1024}
+            />
           </div>
           <div className="group relative">
             {/* 日付の表示 */}

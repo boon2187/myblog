@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Link from "next/link";
 import Head from "next/head";
+import BlogCard from "../../features/blog/components/BlogCard";
 
 export default async function Blogs() {
   // contentディレクトリ内のマークダウンファイル一覧を取得
@@ -44,39 +44,7 @@ export default async function Blogs() {
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               My Blog
             </h2>
-            <div className="mt-10 space-y-16 border-t border-gray-300 pt-10 sm:mt-16 sm:pt-16">
-              {posts.map((post) => (
-                <article
-                  key={post.slug}
-                  className="flex max-w-xl flex-col items-start justify-between"
-                >
-                  <div className="group relative">
-                    {/* 日付の表示 */}
-                    <div className="flex items-center gap-x-4 text-xs">
-                      <div className="text-gray-500">
-                        {new Date(post.frontmatter.date).toLocaleDateString()}
-                      </div>
-                    </div>
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400">
-                      {/* 記事タイトルへのリンク */}
-                      <Link
-                        href={`/blog/${post.slug}`}
-                        className="mt-3 text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400"
-                      >
-                        {post.frontmatter.title}
-                      </Link>
-                    </h3>
-                    {/* 記事の説明文（description）を表示 */}
-                    <p
-                      className="mt-5 line-clamp-3 text-sm leading-6 text-gray-400"
-                      dangerouslySetInnerHTML={{
-                        __html: `${post.frontmatter.description}`,
-                      }}
-                    ></p>
-                  </div>
-                </article>
-              ))}
-            </div>
+            <BlogCard posts={posts} />
           </div>
         </div>
       </div>

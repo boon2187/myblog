@@ -9,7 +9,6 @@ export default function BlogCard({ posts }) {
         <article key={post.slug} className="flex max-w-xl flex-row">
           <div className="w-1/3">
             <MarkdownImage
-              className="bg-white"
               imageUrl={post.frontmatter.image}
               width={1024}
               height={1024}

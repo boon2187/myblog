@@ -19,14 +19,14 @@ export default function BlogCard({ posts }) {
               />
             </Link>
           </div>
-          <div className="group">
+          <div className="group w-2/3 ml-8">
             {/* 日付の表示 */}
             <div className="text-xs">
               <div className="text-gray-500">
                 {new Date(post.frontmatter.date).toLocaleDateString()}
               </div>
             </div>
-            <h3 className="text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400">
+            <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400">
               {/* 記事タイトルへのリンク */}
               <Link
                 href={`/blog/${post.slug}`}
@@ -37,7 +37,7 @@ export default function BlogCard({ posts }) {
             </h3>
             {/* 記事の説明文（description）を表示 */}
             <p
-              className="line-clamp-3 text-sm leading-6 text-gray-400"
+              className="mt-2 line-clamp-3 text-sm leading-6 text-gray-400"
               dangerouslySetInnerHTML={{
                 __html: `${post.frontmatter.description}`,
               }}

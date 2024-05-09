@@ -6,8 +6,8 @@ export default function BlogCard({ posts }) {
   return (
     <div className="mt-10 space-y-16 mx-auto border-t border-gray-400 pt-10 sm:mt-16 sm:pt-16">
       {posts.map((post) => (
-        <article key={post.slug} className="flex max-w-xl flex-row items-start">
-          <div className="">
+        <article key={post.slug} className="flex max-w-xl flex-row">
+          <div className="w-1/3">
             <MarkdownImage
               className="bg-white"
               imageUrl={post.frontmatter.image}

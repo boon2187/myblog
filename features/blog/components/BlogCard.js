@@ -8,11 +8,16 @@ export default function BlogCard({ posts }) {
       {posts.map((post) => (
         <article key={post.slug} className="flex max-w-xl flex-row">
           <div className="w-1/3">
-            <MarkdownImage
-              imageUrl={post.frontmatter.image}
-              width={1024}
-              height={1024}
-            />
+            <Link
+              href={`/blog/${post.slug}`}
+              className="text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400"
+            >
+              <MarkdownImage
+                imageUrl={post.frontmatter.image}
+                width={1024}
+                height={1024}
+              />
+            </Link>
           </div>
           <div className="group">
             {/* 日付の表示 */}

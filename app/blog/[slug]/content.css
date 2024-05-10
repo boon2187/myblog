@@ -28,7 +28,11 @@ ol {
 }
 
 #blog-contents a {
-  @apply text-indigo-600;
+  @apply text-indigo-400;
+}
+
+#blog-contents a:hover {
+  @apply text-indigo-200;
 }
 
 #blog-contents img {

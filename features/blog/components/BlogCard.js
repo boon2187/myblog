@@ -26,22 +26,22 @@ export default function BlogCard({ posts }) {
                 {new Date(post.frontmatter.date).toLocaleDateString()}
               </div>
             </div>
-            <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400">
-              {/* 記事タイトルへのリンク */}
-              <Link
-                href={`/blog/${post.slug}`}
-                className="text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400"
-              >
+            {/* 記事タイトルへのリンク */}
+            <Link
+              href={`/blog/${post.slug}`}
+              className="text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400"
+            >
+              <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400">
                 {post.frontmatter.title}
-              </Link>
-            </h3>
-            {/* 記事の説明文（description）を表示 */}
-            <p
-              className="mt-2 line-clamp-3 text-sm leading-6 text-gray-400"
-              dangerouslySetInnerHTML={{
-                __html: `${post.frontmatter.description}`,
-              }}
-            ></p>
+              </h3>
+              {/* 記事の説明文（description）を表示 */}
+              <p
+                className="mt-2 line-clamp-3 text-sm leading-6 text-gray-400"
+                dangerouslySetInnerHTML={{
+                  __html: `${post.frontmatter.description}`,
+                }}
+              ></p>
+            </Link>
           </div>
         </article>
       ))}

@@ -3,7 +3,7 @@ import React from "react";
 
 function HeaderMenu() {
   return (
-    <header className="flex justify-between	mx-auto max-w-2xl px-6 lg:px-8 text-white">
+    <header className="flex justify-between	mx-auto max-w-2xl px-6 lg:px-8 text-gray-100">
       <div>
         <Link href={"/"}>ロゴ</Link>
       </div>

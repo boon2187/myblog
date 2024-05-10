@@ -8,17 +8,17 @@ function HeaderMenu() {
         <Link href={"/"}>ロゴ</Link>
       </div>
       <nav>
-        <ul className="flex space-x-4">
-          <li className="px-4">
+        <ul className="flex space-x-4 font-semibold [&>li]:px-4 [&>li]:py-2">
+          <li className="hover:bg-gray-800 rounded-md">
             <Link href={"/about"}>about</Link>
           </li>
-          <li className="px-4">
+          <li className="hover:bg-gray-800 rounded-md">
             <Link href={"/blog"}>blog</Link>
           </li>
-          <li className="px-4">
+          <li className="hover:bg-gray-800 rounded-md">
             <Link href={"/projects"}>projects</Link>
           </li>
-          <li className="px-4">
+          <li className="hover:bg-gray-800 rounded-md">
             <Link href={"/gear"}>gear</Link>
           </li>
         </ul>

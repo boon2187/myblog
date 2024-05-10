@@ -31,12 +31,12 @@ export default function BlogCard({ posts }) {
               href={`/blog/${post.slug}`}
               className="text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400"
             >
-              <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400">
+              <h3 className="mt-3 text-lg sm:text-xl font-semibold leading-6 text-gray-100 group-hover:text-gray-400">
                 {post.frontmatter.title}
               </h3>
               {/* 記事の説明文（description）を表示 */}
               <p
-                className="mt-2 line-clamp-3 text-sm leading-6 text-gray-400"
+                className="hidden  sm:mt-2 sm:line-clamp-3 sm:text-sm sm:leading-6 sm:text-gray-400"
                 dangerouslySetInnerHTML={{
                   __html: `${post.frontmatter.description}`,
                 }}

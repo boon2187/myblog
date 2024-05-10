@@ -32,7 +32,7 @@ ol {
 }
 
 #blog-contents a:hover {
-  @apply text-indigo-200;
+  @apply text-indigo-200 duration-500;
 }
 
 #blog-contents img {

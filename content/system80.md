@@ -14,11 +14,11 @@ System76 とは、アメリカのコロラド州デンバーにある Linux が�
 
 また、Pop!\_OS という Ubuntu ベースの独自 OS をリリースしています。
 
-ちなみに、Pop!\_OS は、Linux のディストリビューションのランキングをつけているhttps://distrowatch.com/で、常にトップ１０以内にランキングされている人気Linuxのひとつです。
+ちなみに、Pop!\_OS は、Linux のディストリビューションのランキングをつけている[distrowatch.com](https://distrowatch.com/)、常にトップ１０以内にランキングされている人気 Linux のひとつです。
 
 また、今回購入した Lemur Pro はこちらの Wired の記事にもあるように、なかなかの評価を得ています。
 
-System76 の「Lemur Pro」は高性能でほぼ完璧に近い Linux ノート PC：製品レビュー
+[System76 の「Lemur Pro」は高性能でほぼ完璧に近い Linux ノート PC：製品レビュー](https://wired.jp/article/system-76-lemur-pro-laptop/)
 
 ## System76 購入のきっかけ!
 

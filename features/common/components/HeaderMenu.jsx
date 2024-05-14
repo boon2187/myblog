@@ -16,18 +16,38 @@ function HeaderMenu() {
         </Link>
       </div>
       <nav>
-        <ul className="flex space-x-4 font-semibold [&>li]:px-4 [&>li]:py-2">
-          <li className="hover:bg-gray-800 rounded-md">
-            <Link href={"/about"}>about</Link>
+        <ul className="flex space-x-4 font-semibold">
+          <li>
+            <Link
+              href={"/about"}
+              className="hover:bg-gray-800 rounded-md px-4 py-2"
+            >
+              about
+            </Link>
           </li>
-          <li className="hover:bg-gray-800 rounded-md">
-            <Link href={"/blog"}>blog</Link>
+          <li>
+            <Link
+              href={"/blog"}
+              className="hover:bg-gray-800 rounded-md px-4 py-2"
+            >
+              blog
+            </Link>
           </li>
-          <li className="hover:bg-gray-800 rounded-md">
-            <Link href={"/projects"}>projects</Link>
+          <li>
+            <Link
+              href={"/projects"}
+              className="hover:bg-gray-800 rounded-md px-4 py-2"
+            >
+              projects
+            </Link>
           </li>
-          <li className="hover:bg-gray-800 rounded-md">
-            <Link href={"/gear"}>gear</Link>
+          <li>
+            <Link
+              href={"/gear"}
+              className="hover:bg-gray-800 rounded-md px-4 py-2"
+            >
+              gear
+            </Link>
           </li>
         </ul>
       </nav>

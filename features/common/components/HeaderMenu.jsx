@@ -15,14 +15,14 @@ function HeaderMenu() {
   };
 
   return (
-    <header className="flex justify-between	items-center h-16 mt-6 mx-auto max-w-2xl px-6 lg:px-8 text-gray-100">
+    <header className="flex justify-between	items-center h-16 mt-12 mx-auto max-w-2xl px-6 lg:px-8 text-gray-100">
       <div>
         <Link href={"/"}>
           <Image
             src={"/images/boon-logo.png"}
             alt="logo"
-            width={40}
-            height={40}
+            width={60}
+            height={60}
           />
         </Link>
       </div>

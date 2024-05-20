@@ -15,7 +15,8 @@ function HeaderMenu() {
           />
         </Link>
       </div>
-      <nav>
+      {/* PC用メニュー */}
+      <nav className="hidden sm:block">
         <ul className="flex space-x-4 font-semibold">
           <li>
             <Link
@@ -51,6 +52,7 @@ function HeaderMenu() {
           </li>
         </ul>
       </nav>
+      {/* スマホ用メニュー */}
     </header>
   );
 }

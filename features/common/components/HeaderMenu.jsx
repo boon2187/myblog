@@ -1,8 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 function HeaderMenu() {
+  // スマホメニューの開閉状態を管理するためのstate
+  const [isOpen, setIsOpen] = useState(false);
+  // スマホメニューの開閉状態を切り替える関数
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className="flex justify-between	items-center h-16 mt-6 mx-auto max-w-2xl px-6 lg:px-8 text-gray-100">
       <div>

@@ -64,6 +64,11 @@ function HeaderMenu() {
         </ul>
       </nav>
       {/* スマホ用メニュー */}
+      <div className="sm:hidden">
+        <button onClick={toggleMenu}>
+          <FontAwesomeIcon icon={isOpen ? faTimes : faBars} size="2xl" />
+        </button>
+      </div>
     </header>
   );
 }

@@ -69,6 +69,16 @@ function HeaderMenu() {
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} size="2xl" />
         </button>
       </div>
+      <nav className={`${isOpen ? "block" : "hidden"} `}>
+        <ul className="flex flex-col">
+          <li>
+            <Link href="/">HOME</Link>
+          </li>
+          <li>
+            <Link href="/blog">blog</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }

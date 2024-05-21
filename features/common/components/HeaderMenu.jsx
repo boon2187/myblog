@@ -72,20 +72,28 @@ function HeaderMenu() {
       <nav
         className={`${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } fixed top-0 right-0 sm:hidden`}
+        } fixed top-0 right-0 w-3/4 bg-gray-900 sm:hidden`}
       >
         <ul className="flex flex-col">
           <li>
-            <Link href="/about">about</Link>
+            <Link href="/about" onClick={toggleMenu}>
+              about
+            </Link>
           </li>
           <li>
-            <Link href="/blog">blog</Link>
+            <Link href="/blog" onClick={toggleMenu}>
+              blog
+            </Link>
           </li>
           <li>
-            <Link href="/projects">projects</Link>
+            <Link href="/projects" onClick={toggleMenu}>
+              projects
+            </Link>
           </li>
           <li>
-            <Link href="/gear">gear</Link>
+            <Link href="/gear" onClick={toggleMenu}>
+              gear
+            </Link>
           </li>
         </ul>
       </nav>

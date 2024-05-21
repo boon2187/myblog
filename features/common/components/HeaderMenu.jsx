@@ -72,26 +72,42 @@ function HeaderMenu() {
       <nav
         className={`${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } fixed top-0 right-0 w-3/4 p-8 h-full bg-gray-800 bg-opacity-80  transition-transform duration-300 ease-in-out z-10 sm:hidden`}
+        } fixed top-0 right-0 w-1/2 p-8 h-full bg-gray-800 bg-opacity-80  transition-transform duration-300 ease-in-out z-10 sm:hidden`}
       >
-        <ul className="flex flex-col space-y-4 font-semibold">
+        <ul className="flex flex-col space-y-4 mt-14 font-semibold">
           <li>
-            <Link href="/about" onClick={toggleMenu}>
+            <Link
+              href="/about"
+              className="px-4 py-2 text-xl text-gray-200"
+              onClick={toggleMenu}
+            >
               about
             </Link>
           </li>
           <li>
-            <Link href="/blog" onClick={toggleMenu}>
+            <Link
+              href="/blog"
+              className="px-4 py-2 text-xl text-gray-200"
+              onClick={toggleMenu}
+            >
               blog
             </Link>
           </li>
           <li>
-            <Link href="/projects" onClick={toggleMenu}>
+            <Link
+              href="/projects"
+              className="px-4 py-2 text-xl text-gray-200"
+              onClick={toggleMenu}
+            >
               projects
             </Link>
           </li>
           <li>
-            <Link href="/gear" onClick={toggleMenu}>
+            <Link
+              href="/gear"
+              className="px-4 py-2 text-xl text-gray-200"
+              onClick={toggleMenu}
+            >
               gear
             </Link>
           </li>

@@ -69,7 +69,9 @@ function HeaderMenu() {
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} size="2xl" />
         </button>
       </div>
-      <nav className={`${isOpen ? "block" : "hidden"} `}>
+      <nav
+        className={`${isOpen ? "translate-x-0" : "translate-x-full"} sm:hidden`}
+      >
         <ul className="flex flex-col">
           <li>
             <Link href="/">HOME</Link>

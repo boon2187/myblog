@@ -17,7 +17,7 @@ function HeaderMenu() {
   return (
     <header className="flex justify-between	items-center h-16 mt-12 mx-auto max-w-2xl px-6 lg:px-8 text-gray-100">
       <div>
-        <Link href={"/"}>
+        <Link href={"/"} onClick={() => setIsOpen(false)}>
           <Image
             src={"/images/boon-logo.png"}
             alt="logo"

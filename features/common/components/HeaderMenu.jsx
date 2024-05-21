@@ -70,7 +70,9 @@ function HeaderMenu() {
         </button>
       </div>
       <nav
-        className={`${isOpen ? "translate-x-0" : "translate-x-full"} sm:hidden`}
+        className={`${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } fixed top-0 right-0 sm:hidden`}
       >
         <ul className="flex flex-col">
           <li>

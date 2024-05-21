@@ -74,10 +74,16 @@ function HeaderMenu() {
       >
         <ul className="flex flex-col">
           <li>
-            <Link href="/">HOME</Link>
+            <Link href="/about">about</Link>
           </li>
           <li>
             <Link href="/blog">blog</Link>
+          </li>
+          <li>
+            <Link href="/projects">projects</Link>
+          </li>
+          <li>
+            <Link href="/gear">gear</Link>
           </li>
         </ul>
       </nav>

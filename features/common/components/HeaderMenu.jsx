@@ -64,7 +64,7 @@ function HeaderMenu() {
         </ul>
       </nav>
       {/* スマホ用メニュー */}
-      <div className="sm:hidden">
+      <div className="z-20 relative sm:hidden">
         <button onClick={toggleMenu}>
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} size="2xl" />
         </button>
@@ -72,7 +72,7 @@ function HeaderMenu() {
       <nav
         className={`${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } fixed top-0 right-0 w-3/4 p-8 h-full bg-gray-900 bg-opacity-80  transition-transform duration-300 ease-in-out sm:hidden`}
+        } fixed top-0 right-0 w-3/4 p-8 h-full bg-gray-900 bg-opacity-80  transition-transform duration-300 ease-in-out z-10 sm:hidden`}
       >
         <ul className="flex flex-col space-y-4">
           <li>

@@ -3,7 +3,6 @@ import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
 import Head from "next/head";
-import HeaderMenu from "../features/common/components/HeaderMenu";
 
 export default async function HomePage() {
   // contentディレクトリ内のマークダウンファイル一覧を取得

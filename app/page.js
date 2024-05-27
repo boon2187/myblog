@@ -38,42 +38,7 @@ export default async function HomePage() {
       <div className="bg-black py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              これはトップページ
-            </h2>
-            <div className="mt-10 space-y-16 border-t border-gray-300 pt-10 sm:mt-16 sm:pt-16">
-              {posts.map((post) => (
-                <article
-                  key={post.slug}
-                  className="flex max-w-xl flex-col items-start justify-between"
-                >
-                  <div className="group relative">
-                    {/* 日付の表示 */}
-                    <div className="flex items-center gap-x-4 text-xs">
-                      <div className="text-gray-500">
-                        {new Date(post.frontmatter.date).toLocaleDateString()}
-                      </div>
-                    </div>
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400">
-                      {/* 記事タイトルへのリンク */}
-                      <Link
-                        href={`/blog/${post.slug}`}
-                        className="mt-3 text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400"
-                      >
-                        {post.frontmatter.title}
-                      </Link>
-                    </h3>
-                    {/* 記事の説明文（description）を表示 */}
-                    <p
-                      className="mt-5 line-clamp-3 text-sm leading-6 text-gray-400"
-                      dangerouslySetInnerHTML={{
-                        __html: `${post.frontmatter.description}`,
-                      }}
-                    ></p>
-                  </div>
-                </article>
-              ))}
-            </div>
+            <p className="text-white">とりあえず</p>
           </div>
         </div>
       </div>

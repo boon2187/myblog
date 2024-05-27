@@ -7,6 +7,29 @@ import remarkHtml from "remark-html";
 import "./content.css";
 import MarkdownImage from "../../../features/blog/components/MarkdownImage";
 
+// メタデータを設定するための関数
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const filePath = path.join(process.cwd(), "content", `${slug}.md`);
+
+  // ファイルが存在するかチェック
+  if (!fs.existsSync(filePath)) {
+    // ファイルが存在しない場合の処理
+    console.error(`File not found: ${filePath}`);
+    return { title: "記事が見つかりません" };
+  }
+
+  // ファイルの中身を取得
+  const fileContents = fs.readFileSync(filePath, "utf8");
+  // frontmatterからdateとcontentを取得
+  const { data } = matter(fileContents);
+  const title = data.title; // ブログ記事のタイトル
+
+  return {
+    title: `${title} | Flutter-Newbie Blog`,
+  };
+}
+
 // ブログ記事ページ
 export default async function BlogPage({ params }) {
   // URLのパラエータから該当するファイル名を取得する

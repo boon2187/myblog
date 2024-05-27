@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
-import Head from "next/head";
 
 export default async function HomePage() {
   // contentディレクトリ内のマークダウンファイル一覧を取得
@@ -35,9 +34,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <Head>
-        <title>これはトップページ</title>
-      </Head>
+
       <div className="bg-black py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl">

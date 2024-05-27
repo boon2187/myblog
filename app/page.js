@@ -2,6 +2,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import SelfIntroduction from "../features/top-page/components/SelfIntroduction";
+import TwitterInfo from "../features/top-page/components/TwitterInfo";
+import InstaInfo from "../features/top-page/components/InstaInfo";
+import LatestPosts from "../features/top-page/components/LatestPosts";
 
 export default async function HomePage() {
   // contentディレクトリ内のマークダウンファイル一覧を取得
@@ -38,7 +42,12 @@ export default async function HomePage() {
       <div className="bg-black py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl">
-            <p className="text-white">とりあえず</p>
+            <SelfIntroduction />
+            <div className="flex">
+              <TwitterInfo  />
+              <InstaInfo />
+            </div>
+            <LatestPosts />
           </div>
         </div>
       </div>

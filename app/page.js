@@ -41,14 +41,14 @@ export default async function HomePage() {
       <div className="bg-black py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl">
-            <div>
+            <div className="w-full h-28 bg-neutral-900	rounded-xl">
               <SelfIntroduction />
             </div>
-            <div className="flex">
+            <div className="flex w-full h-28 bg-neutral-900	rounded-xl mt-32">
               <TwitterInfo />
               <InstaInfo />
             </div>
-            <div>
+            <div className="w-full h-28 bg-neutral-900	rounded-xl mt-6">
               <LatestPosts />
             </div>
           </div>

@@ -3,16 +3,17 @@ import React from "react";
 
 function SelfIntroduction() {
   return (
-    <div className="text-white">
-      <div>
+    <div className="flex text-white">
+      <div className="bg-black	flex-1">
         <Image
           src="/images/profile_image.png"
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           alt="profile"
+          className="rounded-full bg-neutral-900"
         />
       </div>
-      <div>
+      <div className="flex-[3]">
         <h2>Fumitsugu Ito</h2>
         <p>
           Hi there! I am software engineer who build web sites and web apps

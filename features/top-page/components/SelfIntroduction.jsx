@@ -14,9 +14,9 @@ function SelfIntroduction() {
         />
       </div>
       <div className="flex-[3]">
-        <h2>Fumitsugu Ito</h2>
-        <p className="text-neutral-400">
-          Hi there! I am software engineer who build web sites and web apps
+        <h2 className="text-2xl font-bold">Fumitsugu Ito</h2>
+        <p className="text-neutral-400 pt-3">
+          Hi there! I am a software engineer who build web sites and web apps
           using React, Next.js and WordPress(PHP). And also I build Smartphone
           Apps with Flutter for my personal projects. One more thing.... I work
           for challenged person's support for employment in Matsumoto, my

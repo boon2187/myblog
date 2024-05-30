@@ -4,7 +4,7 @@ import React from "react";
 function SelfIntroduction() {
   return (
     <div className="flex text-gray-100">
-      <div className="bg-black	flex-1">
+      <div className="bg-black	sm:flex-1">
         <Image
           src="/images/profile_image.png"
           width={100}
@@ -13,7 +13,7 @@ function SelfIntroduction() {
           className="rounded-full bg-neutral-900"
         />
       </div>
-      <div className="flex-[3]">
+      <div className="sm:flex-[3]">
         <h2 className="text-2xl font-bold">Fumitsugu Ito</h2>
         <p className="text-neutral-400 pt-3">
           Hi there! I am a software engineer who build web sites and web apps

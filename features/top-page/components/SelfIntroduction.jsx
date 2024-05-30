@@ -3,7 +3,7 @@ import React from "react";
 
 function SelfIntroduction() {
   return (
-    <div className="flex text-white">
+    <div className="flex text-gray-100">
       <div className="bg-black	flex-1">
         <Image
           src="/images/profile_image.png"
@@ -15,7 +15,7 @@ function SelfIntroduction() {
       </div>
       <div className="flex-[3]">
         <h2>Fumitsugu Ito</h2>
-        <p>
+        <p className="text-neutral-400">
           Hi there! I am software engineer who build web sites and web apps
           using React, Next.js and WordPress(PHP). And also I build Smartphone
           Apps with Flutter for my personal projects. One more thing.... I work

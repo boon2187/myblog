@@ -41,7 +41,7 @@ export default async function HomePage() {
       <div className="bg-black py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl">
-            <div className="w-full bg-neutral-900">
+            <div className="w-full">
               <SelfIntroduction />
             </div>
             <div className="flex w-full h-28 bg-neutral-900	rounded-xl mt-32">

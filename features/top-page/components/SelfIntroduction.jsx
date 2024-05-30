@@ -3,18 +3,18 @@ import React from "react";
 
 function SelfIntroduction() {
   return (
-    <div className="flex text-gray-100">
-      <div className="bg-black	sm:flex-1">
+    <div className="flex flex-col sm:flex-row text-gray-100">
+      <div className="bg-black mb-4	sm:flex-1">
         <Image
           src="/images/profile_image.png"
           width={100}
           height={100}
           alt="profile"
-          className="rounded-full bg-neutral-900"
+          className="rounded-full bg-neutral-900 w-24 h-24 sm:w-32 sm:h-32"
         />
       </div>
       <div className="sm:flex-[3]">
-        <h2 className="text-2xl font-bold">Fumitsugu Ito</h2>
+        <h2 className="text-3xl l font-bold">Fumitsugu Ito</h2>
         <p className="text-neutral-400 pt-3">
           Hi there! I am a software engineer who build web sites and web apps
           using React, Next.js and WordPress(PHP). And also I build Smartphone

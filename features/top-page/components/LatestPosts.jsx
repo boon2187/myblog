@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import { getAllPosts } from "../../common/lib";
+import BlogCard from "../../blog/components/BlogCard";
 
-function LatestPosts() {
+async function LatestPosts() {
+  const allposts = await getAllPosts();
+  const latestPosts = allposts.slice(0, 3);
+  console.log(latestPosts);
+
   return (
-    <div className='text-white w-1/2'>LatestPosts</div>
-  )
+    <div className="text-white w-1/2">
+      <BlogCard posts={latestPosts} />
+    </div>
+  );
 }
 
-export default LatestPosts
+export default LatestPosts;

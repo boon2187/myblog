@@ -48,8 +48,8 @@ export default async function HomePage() {
               <TwitterInfo />
               <InstaInfo />
             </div>
-            <div className="w-full h-28 bg-neutral-900	rounded-xl mt-6">
-              <LatestPosts />
+            <div className="w-full mt-6">
+              <LatestPosts posts={posts} />
             </div>
           </div>
         </div>

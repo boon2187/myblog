@@ -1,6 +1,6 @@
 ---
 title: "System76のパソコンを買いました。"
-date: 2024-04-12
+date: 2024-05-31
 image: "/images/eyecatch_System76.png"
 description: "前の投稿から１年以上経ちましたが、その間に新しいパソコン買いました。System76のLemurProというLinuxプレインストールのPCです。これがまた、結構いいんですよ。"
 tags: ["linux", "system76", "pop_os"]

@@ -49,7 +49,7 @@ export default async function HomePage() {
               <InstaInfo />
             </div>
             <div className="w-full bg-neutral-900	rounded-xl mt-6">
-              <LatestPosts />
+              <LatestPosts posts={posts} />
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
+// マークダウンファイルの中身を取得
 export const getAllPosts = async () => {
   // contentディレクトリ内のマークダウンファイル一覧を取得
   // postsDirectoryは './conent/'

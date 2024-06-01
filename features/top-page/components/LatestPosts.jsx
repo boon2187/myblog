@@ -15,7 +15,7 @@ async function LatestPosts({ posts }) {
         {latestPosts.map((post) => (
           <li
             key={post.slug}
-            className="flex flex-col py-3 sm:flex-row sm:py-3 sm:gap-x-14"
+            className="flex flex-col py-3 sm:flex-row sm:gap-x-14"
           >
             <Link href={`/blog/${post.slug}`}>
               <h2 className="text-neutral-300">

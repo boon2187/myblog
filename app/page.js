@@ -44,7 +44,7 @@ export default async function HomePage() {
             <div className="w-full">
               <SelfIntroduction />
             </div>
-            <div className="flex w-full h-28 rounded-xl mt-16 sm:mt-32">
+            <div className="flex gap-x-5 w-full h-28 rounded-xl mt-16 sm:mt-32">
               <TwitterInfo />
               <InstaInfo />
             </div>

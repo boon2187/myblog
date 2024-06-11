@@ -3,7 +3,7 @@ import React from "react";
 
 function TwitterInfo() {
   return (
-    <div className="flex">
+    <div className="flex w-1/2  bg-neutral-900">
       <div>
         <Image
           src={"/images/twitter.png"}

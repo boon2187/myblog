@@ -1,9 +1,22 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 function TwitterInfo() {
   return (
-    <div className='text-white'>TwitterInfo</div>
-  )
+    <div className="flex">
+      <div>
+        <Image
+          src={"/images/twitter.png"}
+          width={100}
+          height={100}
+          alt="profile"
+        />
+      </div>
+      <div>
+        <p className="text-white">Please follow me.</p>
+      </div>
+    </div>
+  );
 }
 
-export default TwitterInfo
+export default TwitterInfo;

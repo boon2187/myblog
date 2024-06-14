@@ -8,7 +8,7 @@ function InstaInfo() {
       <div className="py-1 px-3">
         <Link href="https://twitter.com/boon2187">
           <Image
-            src={"/images/twitter.png"}
+            src={"/images/instgram-logo.png"}
             width={100}
             height={100}
             alt="profile"

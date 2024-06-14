@@ -21,7 +21,7 @@ function TwitterInfo() {
           <h2 className="text-lg font-semibold text-gray-100">My X account</h2>
         </Link>
         <p className="text-neutral-400 mt-1">
-          I usually posts sssssss ssss sssss sssssss my ssss ssss ssssssssssss
+          I post about my personal development, work, family, and more.
         </p>
       </div>
     </div>

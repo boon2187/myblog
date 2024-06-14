@@ -6,7 +6,7 @@ function InstaInfo() {
   return (
     <div className="flex rounded bg-neutral-900 py-3">
       <div className="py-1 px-3">
-        <Link href="https://twitter.com/boon2187">
+        <Link href="https://www.instagram.com/boon_boon/">
           <Image
             src={"/images/instgram-logo.png"}
             width={100}
@@ -17,11 +17,12 @@ function InstaInfo() {
         </Link>
       </div>
       <div className="px-1">
-        <Link href="https://twitter.com/boon2187">
-          <h2 className="text-lg font-semibold text-gray-100">My X account</h2>
+        <Link href="https://www.instagram.com/boon_boon/">
+          <h2 className="text-lg font-semibold text-gray-100">My Instagram</h2>
         </Link>
         <p className="text-neutral-400 mt-1">
-          I post about my personal development, work, family, and more.
+          I usually post pictures of the mountains and skies of my hometown,
+          Matsumoto.
         </p>
       </div>
     </div>

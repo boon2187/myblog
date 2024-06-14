@@ -5,14 +5,14 @@ import React from "react";
 function TwitterInfo() {
   return (
     <div className="flex rounded bg-neutral-900 py-3">
-      <div className="py-1 px-3 w-1/3">
+      <div className="py-1 px-3">
         <Link href="https://twitter.com/boon2187">
           <Image
             src={"/images/twitter.png"}
             width={100}
             height={100}
             alt="profile"
-            className="rounded-xl"
+            className="rounded-xl min-w-20"
           />
         </Link>
       </div>

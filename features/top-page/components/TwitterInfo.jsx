@@ -16,7 +16,7 @@ function TwitterInfo() {
           />
         </Link>
       </div>
-      <div className="px-1 sm:w-2/3">
+      <div className="px-1">
         <Link href="https://twitter.com/boon2187">
           <h2 className="text-lg font-semibold text-gray-100">My X account</h2>
         </Link>

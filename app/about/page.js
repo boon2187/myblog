@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -10,10 +11,34 @@ const About = () => {
           </h2>
           <div className="mt-10 space-y-16 mx-auto border-t border-gray-400 pt-10 sm:mt-16 sm:pt-16">
             <div className="flex flex-col sm:flex-row">
-              <div className="text-white">プロフィールのイラスト</div>
-              <div>
-                <div className="text-white">槍ヶ岳の写真</div>
-                <div className="text-white">オンデーズでの</div>
+              <div className="text-white w-1/2">
+                <Image
+                  src="/images/profile_image.png"
+                  width={100}
+                  height={100}
+                  alt="profile"
+                  className="w-full"
+                />
+              </div>
+              <div className="">
+                <div className="text-white">
+                  <Image
+                    src="/images/portrait01.jpg"
+                    width={100}
+                    height={100}
+                    alt="profile"
+                    className="w-full"
+                  />
+                </div>
+                <div className="text-white">
+                  <Image
+                    src="/images/portrait02.jpg"
+                    width={100}
+                    height={100}
+                    alt="profile"
+                    className="w-full"
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -21,24 +21,11 @@ const About = () => {
                 />
               </div>
               <div className="">
-                <div className="text-white">
-                  <Image
-                    src="/images/portrait01.jpg"
-                    width={100}
-                    height={100}
-                    alt="profile"
-                    className="w-full"
-                  />
-                </div>
-                <div className="text-white">
-                  <Image
-                    src="/images/portrait02.jpg"
-                    width={100}
-                    height={100}
-                    alt="profile"
-                    className="w-full"
-                  />
-                </div>
+                <p className="text-neutral-400 pt-3">
+                  Hello! I'm Fumitsugu Ito, born in Tokyo and raised in Chiba. I
+                  specialize in Web Apps with React and Next.js, and smartphone
+                  app with Flutter.
+                </p>
               </div>
             </div>
           </div>

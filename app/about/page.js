@@ -26,6 +26,11 @@ const About = () => {
                   specialize in Web Apps with React and Next.js, and smartphone
                   app with Flutter.
                 </p>
+                <p className="text-neutral-400 pt-3">
+                  In addition, I work for challenged person's support for
+                  employment. I advised them about IT, software engineering and
+                  programming.
+                </p>
               </div>
             </div>
           </div>

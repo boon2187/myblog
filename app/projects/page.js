@@ -10,7 +10,12 @@ const Projects = () => {
             My Projects
           </h2>
           <div className="mt-10 space-y-16 mx-auto border-t border-gray-400 pt-10 sm:mt-16 sm:pt-16">
-            <ProjectList />
+            <div className="text-neutral-400 mb-8">
+              Hello, this is the list of my repos
+            </div>
+            <div className="max-w-xl mx-auto">
+              <ProjectList />
+            </div>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import logo from "./../../../public/images/boon-logo.png";
 
 function HeaderMenu() {
   // スマホメニューの開閉状態を管理するためのstate
@@ -18,12 +19,7 @@ function HeaderMenu() {
     <header className="flex justify-between	items-center h-16 mt-12 mx-auto max-w-2xl px-6 lg:px-8 text-gray-100">
       <div>
         <Link href={"/"} onClick={() => setIsOpen(false)}>
-          <Image
-            src={"/images/boon-logo.png"}
-            alt="logo"
-            width={60}
-            height={60}
-          />
+          <Image src={logo} alt="logo" width={60} height={60} />
         </Link>
       </div>
       {/* PC用メニュー */}

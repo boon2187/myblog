@@ -34,30 +34,6 @@ const About = () => {
                 </p>
               </div>
             </div>
-
-            <div className="flex flex-col sm:flex-row">
-              <div className="text-white w-1/2">
-                <Image
-                  src="/images/profile_image.png"
-                  width={100}
-                  height={100}
-                  alt="profile"
-                  className="w-full"
-                />
-              </div>
-              <div className="">
-                <p className="text-neutral-400 pt-3">
-                  Hello! I'm Fumitsugu Ito, born in Tokyo and raised in Chiba. I
-                  specialize in Web Apps with React and Next.js, and smartphone
-                  app with Flutter.
-                </p>
-                <p className="text-neutral-400 pt-3">
-                  In addition, I work for challenged person's support for
-                  employment. I advised them about IT, software engineering and
-                  programming.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

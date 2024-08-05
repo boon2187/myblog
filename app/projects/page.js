@@ -11,7 +11,7 @@ const Projects = () => {
           </h2>
           <div className="mt-10 space-y-16 mx-auto border-t border-gray-400 pt-10 sm:mt-16 sm:pt-16">
             <div className="text-neutral-400 mb-8">
-              Hello, this is the list of my repos
+              This is the list of my GitHub repos.
             </div>
             <div className="max-w-xl mx-auto">
               <ProjectList />

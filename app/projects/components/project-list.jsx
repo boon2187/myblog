@@ -6,7 +6,7 @@ const ProjectList = async () => {
   const repos = await response.json();
 
   return (
-    <ul className="text-white">
+    <ul className="text-white grid grid-cols-1 sm:grid-cols-2 gap-4">
       {repos.map((repo) => (
         <li key={repo.id} className="bg-gray-800 p-4 rounded-lg mb-4">
           <div className="flex justify-between items-center mb-4">

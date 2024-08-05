@@ -4,7 +4,6 @@ import React from "react";
 const ProjectList = async () => {
   const response = await fetch("https://api.github.com/users/boon2187/repos");
   const repos = await response.json();
-  console.log(repos);
 
   return (
     <ul className="text-white">

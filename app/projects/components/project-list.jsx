@@ -12,7 +12,9 @@ const ProjectList = async () => {
           <div className="flex justify-between items-center mb-4">
             <Link href={repo.html_url}>
               <h3 className="text-base font-semibold text-white">
-                {repo.name}
+                {repo.name.length > 24
+                  ? `${repo.name.substring(0, 20)}...`
+                  : repo.name}
               </h3>
             </Link>
             <div>🌟{repo.stargazers_count}</div>

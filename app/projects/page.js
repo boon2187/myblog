@@ -1,4 +1,5 @@
 import React from "react";
+import { ErrorBoundary } from "react-error-boundary";
 import ProjectList from "./components/project-list";
 
 const Projects = () => {
@@ -14,7 +15,15 @@ const Projects = () => {
               This is the list of my GitHub repos.
             </div>
             <div className="max-w-xl mx-auto">
-              <ProjectList />
+              <ErrorBoundary
+                fallback={
+                  <div className="text-2xl text-white">
+                    Cannot fetch projects currently.
+                  </div>
+                }
+              >
+                <ProjectList />
+              </ErrorBoundary>
             </div>
           </div>
         </div>

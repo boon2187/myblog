@@ -6,14 +6,14 @@ const ProjectList = async () => {
   console.log(repos);
 
   return (
-    <div className="text-white">
+    <ul className="text-white">
       {repos.map((repo) => (
-        <div key={repo.id} className="bg-gray-800 p-4 rounded-lg mb-4">
+        <li key={repo.id} className="bg-gray-800 p-4 rounded-lg mb-4">
           <h3 className="text-xl font-bold text-white">{repo.name}</h3>
           <p className="text-gray-400">{repo.description}</p>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

@@ -34,6 +34,8 @@ const About = () => {
                 </p>
               </div>
             </div>
+            <div>写真部分</div>
+            <div>connect部分</div>
           </div>
         </div>
       </div>

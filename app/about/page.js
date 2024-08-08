@@ -1,6 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import profile from "../../public/images/profile_image.png";
+import aboutMe from "../../public/images/about-me.jpg";
+import aboutCastle from "../../public/images/about-castle.jpg";
+import aboutMountain from "../../public/images/about-mountain.jpg";
 
 const About = () => {
   return (
@@ -34,10 +37,43 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-neutral-400">
-              <div>写真１</div>
-              <div>写真２</div>
-              <div>写真３</div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-neutral-400">
+              <div>
+                <Image
+                  src={aboutCastle}
+                  width={100}
+                  height={100}
+                  alt="Matsumoto Castle"
+                  className="w-full rounded"
+                />
+                <h4 className="text-lg font-semibold text-neutral-400 mt-3">
+                  Matsumoto Castle
+                </h4>
+              </div>
+              <div>
+                <Image
+                  src={aboutMe}
+                  width={100}
+                  height={100}
+                  alt="Me"
+                  className="w-full rounded"
+                />
+                <h4 className="text-lg font-semibold text-neutral-400 mt-3">
+                  Me...
+                </h4>
+              </div>
+              <div>
+                <Image
+                  src={aboutMountain}
+                  width={100}
+                  height={100}
+                  alt="Mt Jonen-dake"
+                  className="w-full rounded"
+                />
+                <h4 className="text-lg font-semibold text-neutral-400 mt-3">
+                  Mt Jonen-dake
+                </h4>
+              </div>
             </div>
             <div>
               <h3 className="text-2xl font-semibold text-white">Connect</h3>

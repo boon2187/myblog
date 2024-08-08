@@ -48,7 +48,7 @@ const About = () => {
                   width={100}
                   height={100}
                   alt="Matsumoto Castle"
-                  className="w-full rounded"
+                  className="w-4/5 mx-auto sm:w-full rounded"
                 />
                 <h4 className="text-lg font-semibold text-neutral-400 text-center mt-3">
                   Matsumoto Castle
@@ -60,10 +60,10 @@ const About = () => {
                   width={100}
                   height={100}
                   alt="Me"
-                  className="w-full rounded"
+                  className="w-4/5 mx-auto sm:w-full rounded"
                 />
                 <h4 className="text-lg font-semibold text-neutral-400 text-center mt-3">
-                  Me...
+                  Me... about 10 years ago
                 </h4>
               </div>
               <div>
@@ -72,7 +72,7 @@ const About = () => {
                   width={100}
                   height={100}
                   alt="Mt Jonen"
-                  className="w-full rounded"
+                  className="w-4/5 mx-auto sm:w-full rounded"
                 />
                 <h4 className="text-lg font-semibold text-neutral-400 text-center mt-3">
                   Mount Jōnen

@@ -5,6 +5,10 @@ import aboutMe from "../../public/images/about-me.jpg";
 import aboutCastle from "../../public/images/about-castle.jpg";
 import aboutMountain from "../../public/images/about-mountain.jpg";
 
+export const metadata = {
+  title: "About Me...",
+};
+
 const About = () => {
   return (
     <div className="bg-black py-24 sm:py-32">
@@ -46,7 +50,7 @@ const About = () => {
                   alt="Matsumoto Castle"
                   className="w-full rounded"
                 />
-                <h4 className="text-lg font-semibold text-neutral-400 mt-3">
+                <h4 className="text-lg font-semibold text-neutral-400 text-center mt-3">
                   Matsumoto Castle
                 </h4>
               </div>
@@ -58,7 +62,7 @@ const About = () => {
                   alt="Me"
                   className="w-full rounded"
                 />
-                <h4 className="text-lg font-semibold text-neutral-400 mt-3">
+                <h4 className="text-lg font-semibold text-neutral-400 text-center mt-3">
                   Me...
                 </h4>
               </div>
@@ -67,11 +71,11 @@ const About = () => {
                   src={aboutMountain}
                   width={100}
                   height={100}
-                  alt="Mt Jonen-dake"
+                  alt="Mt Jonen"
                   className="w-full rounded"
                 />
-                <h4 className="text-lg font-semibold text-neutral-400 mt-3">
-                  Mt Jonen-dake
+                <h4 className="text-lg font-semibold text-neutral-400 text-center mt-3">
+                  Mount Jōnen
                 </h4>
               </div>
             </div>

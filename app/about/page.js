@@ -34,8 +34,16 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div>写真部分</div>
-            <div>connect部分</div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-neutral-400">
+              <div>写真１</div>
+              <div>写真２</div>
+              <div>写真３</div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-neutral-400">
+              <div>Instagram</div>
+              <div>site</div>
+              <div>email</div>
+            </div>
           </div>
         </div>
       </div>

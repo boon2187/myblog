@@ -8,7 +8,7 @@ const ProjectList = async () => {
   return (
     <ul className="text-white grid grid-cols-1 sm:grid-cols-2 gap-4">
       {repos.map((repo) => (
-        <li key={repo.id} className="bg-gray-800 p-4 rounded-lg mb-4">
+        <li key={repo.id} className="bg-neutral-900 p-4 rounded-lg mb-4">
           <div className="flex justify-between items-center mb-4">
             <Link href={repo.html_url}>
               <h3 className="text-base font-semibold text-white">

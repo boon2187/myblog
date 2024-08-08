@@ -39,10 +39,13 @@ const About = () => {
               <div>写真２</div>
               <div>写真３</div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-neutral-400">
-              <div>Instagram</div>
-              <div>site</div>
-              <div>email</div>
+            <div>
+              <h3 className="text-2xl font-semibold text-white">Connect</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-neutral-400">
+                <div>Instagram</div>
+                <div>site</div>
+                <div>email</div>
+              </div>
             </div>
           </div>
         </div>

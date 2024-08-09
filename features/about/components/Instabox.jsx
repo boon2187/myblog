@@ -7,18 +7,16 @@ import React from "react";
 
 function Instabox() {
   return (
-    <div className="flex rounded bg-neutral-900 py-3">
-      <div className="py-1 px-3">
-        <Link href="https://www.instagram.com/boon_boon/">
+    <Link href="https://www.instagram.com/boon_boon/">
+      <div className="flex rounded bg-neutral-900 py-3 h-20 items-center">
+        <div className="py-1 px-3">
           <FontAwesomeIcon icon={faInstagram} size="2x" />
-        </Link>
+        </div>
+        <div className="px-1">
+          <h2 className="font-semibold text-gray-100">My Instagram</h2>
+        </div>
       </div>
-      <div className="px-1">
-        <Link href="https://www.instagram.com/boon_boon/">
-          <h2 className="text-lg font-semibold text-gray-100">My Instagram</h2>
-        </Link>
-      </div>
-    </div>
+    </Link>
   );
 }
 

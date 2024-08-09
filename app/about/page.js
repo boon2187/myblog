@@ -6,6 +6,8 @@ import aboutCastle from "../../public/images/about-castle.jpg";
 import aboutMountain from "../../public/images/about-mountain.jpg";
 
 import Instbox from "../../features/about/components/Instabox";
+import Twitterbox from "../../features/about/components/Twitterbox";
+import Emailbox from "../../features/about/components/Emailbox";
 
 export const metadata = {
   title: "About Me...",
@@ -85,8 +87,8 @@ const About = () => {
               <h3 className="text-2xl font-semibold text-white">Connect</h3>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 text-neutral-400 w-full mt-4">
                 <Instbox />
-                <Instbox />
-                <Instbox />
+                <Twitterbox />
+                <Emailbox />
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
-import ProjectList from "./components/project-list";
+import ProjectList from "../../features/projects/conponents/project-list";
 
 export default function Projects() {
   return (

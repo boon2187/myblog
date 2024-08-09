@@ -63,7 +63,7 @@ const About = () => {
                   className="w-4/5 mx-auto sm:w-full rounded"
                 />
                 <h4 className="text-lg font-semibold text-neutral-400 text-center mt-3">
-                  Me... about 10 years ago
+                  Me... 10 years ago
                 </h4>
               </div>
               <div>

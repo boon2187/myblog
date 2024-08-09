@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
 
-function Emailbox() {
+const Emailbox = () => {
   return (
     <Link href="mailto:boonboon@flutter-newbie.com">
       <div className="flex rounded bg-neutral-900 py-3 h-20 items-center">
@@ -18,6 +18,6 @@ function Emailbox() {
       </div>
     </Link>
   );
-}
+};
 
 export default Emailbox;

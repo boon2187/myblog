@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "./../../../public/images/boon-logo.png";
 
-function HeaderMenu() {
+const HeaderMenu = () => {
   // スマホメニューの開閉状態を管理するためのstate
   const [isOpen, setIsOpen] = useState(false);
   // スマホメニューの開閉状態を切り替える関数
@@ -111,6 +111,6 @@ function HeaderMenu() {
       </nav>
     </header>
   );
-}
+};
 
 export default HeaderMenu;

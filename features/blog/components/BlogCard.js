@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import MarkdownImage from "./MarkdownImage";
+import exp from "constants";
 
-export default function BlogCard({ posts }) {
+const BlogCard = ({ posts }) => {
   return (
     <div className="mt-10 space-y-16 mx-auto border-t border-gray-400 pt-10 sm:mt-16 sm:pt-16">
       {posts.map((post) => (
@@ -47,4 +48,6 @@ export default function BlogCard({ posts }) {
       ))}
     </div>
   );
-}
+};
+
+export default BlogCard;

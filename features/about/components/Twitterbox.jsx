@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
 
-function Twitterbox() {
+const Twitterbox = () => {
   return (
     <Link href="https://twitter.com/boon2187">
       <div className="flex rounded bg-neutral-900 py-3 h-20 items-center">
@@ -17,6 +17,6 @@ function Twitterbox() {
       </div>
     </Link>
   );
-}
+};
 
 export default Twitterbox;

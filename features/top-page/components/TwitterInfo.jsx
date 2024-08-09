@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-function TwitterInfo() {
+const TwitterInfo = () => {
   return (
     <div className="flex rounded bg-neutral-900 py-3">
       <div className="py-1 px-3">
@@ -26,6 +26,6 @@ function TwitterInfo() {
       </div>
     </div>
   );
-}
+};
 
 export default TwitterInfo;

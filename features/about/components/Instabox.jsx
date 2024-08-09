@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
 
-function Instabox() {
+const Instabox = () => {
   return (
     <Link href="https://www.instagram.com/boon_boon/">
       <div className="flex rounded bg-neutral-900 py-3 h-20 items-center">
@@ -17,6 +17,6 @@ function Instabox() {
       </div>
     </Link>
   );
-}
+};
 
 export default Instabox;

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-function InstaInfo() {
+const InstaInfo = () => {
   return (
     <div className="flex rounded bg-neutral-900 py-3">
       <div className="py-1 px-3">
@@ -27,6 +27,6 @@ function InstaInfo() {
       </div>
     </div>
   );
-}
+};
 
 export default InstaInfo;

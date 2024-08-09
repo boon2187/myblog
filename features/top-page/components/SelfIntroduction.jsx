@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-function SelfIntroduction() {
+const SelfIntroduction = () => {
   return (
     <div className="flex flex-col sm:flex-row text-gray-100">
       <div className="bg-black mb-4	sm:flex-1">
@@ -26,6 +26,6 @@ function SelfIntroduction() {
       </div>
     </div>
   );
-}
+};
 
 export default SelfIntroduction;

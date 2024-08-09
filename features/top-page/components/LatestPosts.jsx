@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import MarkdownImage from "../../blog/components/MarkdownImage";
 
-async function LatestPosts({ posts }) {
+const LatestPosts = async ({ posts }) => {
   const latestPosts = posts.slice(0, 3);
 
   return (
@@ -43,6 +43,6 @@ async function LatestPosts({ posts }) {
       </ul>
     </div>
   );
-}
+};
 
 export default LatestPosts;

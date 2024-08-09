@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import MarkdownImage from "./MarkdownImage";
-import exp from "constants";
 
 const BlogCard = ({ posts }) => {
   return (

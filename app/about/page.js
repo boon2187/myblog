@@ -9,6 +9,7 @@ import Instbox from "../../features/about/components/Instabox";
 import Twitterbox from "../../features/about/components/Twitterbox";
 import Emailbox from "../../features/about/components/Emailbox";
 
+// ページのタイトルを設定
 export const metadata = {
   title: "About Me...",
 };

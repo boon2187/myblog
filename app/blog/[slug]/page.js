@@ -5,7 +5,8 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkHtml from "remark-html";
 import "./content.css";
-import MarkdownImage from "../../features/blog/components/MarkdownImage";
+import MarkdownImage from "../../../features/blog/components/MarkdownImage";
+
 // メタデータを設定するための関数
 export async function generateMetadata({ params }) {
   const { slug } = params;

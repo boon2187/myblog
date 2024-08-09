@@ -87,8 +87,12 @@ const About = () => {
                 <div>
                   <Instbox />
                 </div>
-                <div>site</div>
-                <div>email</div>
+                <div>
+                  <Instbox />
+                </div>
+                <div>
+                  <Instbox />
+                </div>
               </div>
             </div>
           </div>

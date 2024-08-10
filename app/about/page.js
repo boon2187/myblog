@@ -53,7 +53,7 @@ export default function About() {
                   width={100}
                   height={100}
                   alt="Matsumoto Castle"
-                  className="w-4/5 mx-auto sm:w-full rounded"
+                  className="w-4/5 mx-auto sm:rotate-3 sm:w-full rounded"
                 />
                 <h4 className="text-lg font-semibold text-neutral-400 text-center mt-3">
                   Matsumoto Castle
@@ -65,7 +65,7 @@ export default function About() {
                   width={100}
                   height={100}
                   alt="Me"
-                  className="w-4/5 mx-auto sm:w-full rounded"
+                  className="w-4/5 mx-auto sm:-rotate-3 sm:w-full rounded"
                 />
                 <h4 className="text-lg font-semibold text-neutral-400 text-center mt-3">
                   Me... 10 years ago
@@ -77,7 +77,7 @@ export default function About() {
                   width={100}
                   height={100}
                   alt="Mt Jonen"
-                  className="w-4/5 mx-auto sm:w-full rounded"
+                  className="w-4/5 mx-auto sm:rotate-3 sm:w-full rounded"
                 />
                 <h4 className="text-lg font-semibold text-neutral-400 text-center mt-3">
                   Mount Jōnen

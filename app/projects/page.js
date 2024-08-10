@@ -2,6 +2,10 @@ import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import ProjectList from "../../features/projects/conponents/project-list";
 
+export const metadata = {
+  title: "My Projects",
+};
+
 export default function Projects() {
   return (
     <div className="bg-black py-24 sm:py-32">

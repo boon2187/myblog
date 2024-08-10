@@ -1,9 +1,9 @@
 ---
-title: "First Post"
-date: 2024-06-01
+title: "About this blog"
+date: 2024-08-01
 image: "/images/03_System76.png"
-description: "Next.jsを使ってブログを書くことに挑戦"
-tags: ["Next.js"]
+description: "Next.js, Tailwind CSS, Markdown の勉強も兼ねてブログのサイトを作りました。"
+tags: ["Next.js", "Tailwind", "Markdown"]
 ---
 
 ## Web エンジニアらしく、WrodPress でなく Next.js で

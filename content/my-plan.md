@@ -1,12 +1,12 @@
 ---
-title: "System78のパソコンを買いました。"
-date: 2024-04-14
-image: "/images/eyecatch_System76.png"
-description: "前の投稿から１年以上経ちましたが、その間に新しいパソコン買いました。System76のLemurProというLinuxプレインストールのPCです。これがまた、結構いいんですよ。"
-tags: ["linux", "system76", "pop_os"]
+title: "今後の個人開発の計画"
+date: 2024-08-05
+image: "/images/eyecatch-plan.png"
+description: "これから作るアプリの計画です。"
+tags: ["flutter", "android", "個人開発"]
 ---
 
-## System78 ってどんなメーカー？
+## System79 ってどんなメーカー？
 
 ![test-image](/images/01_System76.png)
 System76 とは、アメリカのコロラド州デンバーにある Linux がプレインストールされた PC の製造業者です。

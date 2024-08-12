@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkHtml from "remark-html";
+import remarkBreaks from "remark-breaks";
 import "./content.css";
 import MarkdownImage from "../../../features/blog/components/MarkdownImage";
 
@@ -60,6 +61,7 @@ export default async function BlogPage({ params }) {
   const processedContent = await unified()
     .use(remarkParse)
     .use(remarkHtml)
+    .use(remarkBreaks)
     .process(content);
   const contentHtml = processedContent.toString(); // ブログ記事のHTML
 

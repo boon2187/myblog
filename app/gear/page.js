@@ -15,7 +15,7 @@ export default function Gear() {
             My Gear
           </h2>
           <div className="mt-10 space-y-16 mx-auto border-t border-gray-400 pt-10 sm:mt-16 sm:pt-16">
-            <div className="container flex">
+            <div className="w-full flex">
               <div className="w-1/4">
                 <Image
                   src={profile}

@@ -1,6 +1,6 @@
 ---
 title: "My Gears"
-date: 2024-09-06
+date: 2024-09-20
 image: "/images/eyecatch-mygear.png"
 description: "普段使っているGearの紹介です。"
 tags: ["gear", "system76", "display", "pixel"]

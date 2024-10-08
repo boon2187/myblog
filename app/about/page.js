@@ -35,12 +35,12 @@ export default function About() {
               </div>
               <div>
                 <p className="text-neutral-400 pt-3">
-                  Hello! I'm Fumitsugu Ito, born in Tokyo and raised in Chiba. I
-                  specialize in Web Apps with React and Next.js, and smartphone
-                  app with Flutter.
+                  Hello! I&apos;m Fumitsugu Ito, born in Tokyo and raised in
+                  Chiba. I specialize in Web Apps with React and Next.js, and
+                  smartphone app with Flutter.
                 </p>
                 <p className="text-neutral-400 pt-3">
-                  In addition, I work for challenged person's support for
+                  In addition, I work for challenged person&apos;s support for
                   employment. I advised them about IT, software engineering and
                   programming.
                 </p>

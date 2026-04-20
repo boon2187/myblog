@@ -9,7 +9,8 @@ import "./content.css";
 import MarkdownImage from "../../../features/blog/components/MarkdownImage";
 
 // メタデータを設定するための関数
-export async function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const { slug } = params;
   const filePath = path.join(process.cwd(), "content", `${slug}.md`);
 
@@ -32,7 +33,8 @@ export async function generateMetadata({ params }) {
 }
 
 // ブログ記事ページ
-export default async function BlogPage({ params }) {
+export default async function BlogPage(props) {
+  const params = await props.params;
   // URLのパラエータから該当するファイル名を取得する
   const { slug } = params;
   const filePath = path.join(process.cwd(), "content", `${slug}.md`);

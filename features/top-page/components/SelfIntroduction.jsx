@@ -19,7 +19,7 @@ const SelfIntroduction = () => {
           Hi there! I am a software engineer who build web sites and web apps
           using React, Next.js and WordPress(PHP). And also I build Smartphone
           Apps with Flutter for my personal projects. One more thing.... I work
-          for challenged person's support for employment in Matsumoto, my
+          for challenged person&apos;s support for employment in Matsumoto, my
           hometown. I advised them about IT, software engineering and
           programming there.
         </p>

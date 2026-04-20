@@ -1,8 +1,12 @@
-import React from "react";
 import Link from "next/link";
 import MarkdownImage from "../../blog/components/MarkdownImage";
+import type { Post } from "../../common/lib";
 
-const LatestPosts = async ({ posts }) => {
+type Props = {
+  posts: Post[];
+};
+
+const LatestPosts = ({ posts }: Props) => {
   const latestPosts = posts.slice(0, 3);
 
   return (

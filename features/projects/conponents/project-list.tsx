@@ -1,9 +1,19 @@
 import Link from "next/link";
-import React from "react";
+import { cacheLife } from "next/cache";
+
+type GitHubRepo = {
+  id: number;
+  name: string;
+  html_url: string;
+  description: string | null;
+  stargazers_count: number;
+};
 
 const ProjectList = async () => {
+  "use cache";
+  cacheLife("hours");
   const response = await fetch("https://api.github.com/users/boon2187/repos");
-  const repos = await response.json();
+  const repos: GitHubRepo[] = await response.json();
 
   return (
     <ul className="text-white grid grid-cols-1 sm:grid-cols-2 gap-4">

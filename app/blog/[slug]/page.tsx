@@ -5,65 +5,65 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkHtml from "remark-html";
 import remarkBreaks from "remark-breaks";
+import type { Metadata } from "next";
 import "./content.css";
 import MarkdownImage from "../../../features/blog/components/MarkdownImage";
+import { getAllPosts } from "../../../features/common/lib";
+import type { PostFrontmatter } from "../../../features/common/lib";
 
-// メタデータを設定するための関数
-export async function generateMetadata({ params }) {
-  const { slug } = params;
+export async function generateStaticParams() {
+  const posts = await getAllPosts();
+  return posts.map((post) => ({ slug: post.slug }));
+}
+
+export async function generateMetadata(
+  props: PageProps<"/blog/[slug]">
+): Promise<Metadata> {
+  "use cache";
+  const { slug } = await props.params;
   const filePath = path.join(process.cwd(), "content", `${slug}.md`);
 
-  // ファイルが存在するかチェック
   if (!fs.existsSync(filePath)) {
-    // ファイルが存在しない場合の処理
     console.error(`File not found: ${filePath}`);
     return { title: "記事が見つかりません" };
   }
 
-  // ファイルの中身を取得
   const fileContents = fs.readFileSync(filePath, "utf8");
-  // frontmatterからdateとcontentを取得
   const { data } = matter(fileContents);
-  const title = data.title; // ブログ記事のタイトル
+  const { title } = data as PostFrontmatter;
 
   return {
     title: `${title} | Flutter-Newbie Blog`,
   };
 }
 
-// ブログ記事ページ
-export default async function BlogPage({ params }) {
-  // URLのパラエータから該当するファイル名を取得する
-  const { slug } = params;
+export default async function BlogPage(props: PageProps<"/blog/[slug]">) {
+  "use cache";
+  const { slug } = await props.params;
   const filePath = path.join(process.cwd(), "content", `${slug}.md`);
 
-  // ファイルが存在するかチェック
   if (!fs.existsSync(filePath)) {
-    // ファイルが存在しない場合の処理
     console.error(`File not found: ${filePath}`);
-    return;
+    return null;
   }
 
-  // ファイルの中身を取得
   const fileContents = fs.readFileSync(filePath, "utf8");
-  // frontmatterからdateとcontentを取得
   const { data, content } = matter(fileContents);
-  const title = data.title; // ブログ記事のタイトル
-  const imageUrl = data.image; // ブログ記事のアイキャッチ画像
+  const { title, image: imageUrl } = data as PostFrontmatter;
   const date = new Date(data.date)
     .toLocaleDateString("ja-JP", {
       year: "numeric",
       month: "numeric",
       day: "numeric",
     })
-    .replace(/\//g, "."); // 「年/月/日」を「年.月.日」に置換
+    .replace(/\//g, ".");
 
   const processedContent = await unified()
     .use(remarkParse)
     .use(remarkHtml)
     .use(remarkBreaks)
     .process(content);
-  const contentHtml = processedContent.toString(); // ブログ記事のHTML
+  const contentHtml = processedContent.toString();
 
   return (
     <div id="blog-contents" className="bg-black px-6 py-32 lg:px-8">

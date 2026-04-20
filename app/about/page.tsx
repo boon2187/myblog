@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import type { Metadata } from "next";
 import profile from "../../public/images/profile_image.png";
 import aboutMe from "../../public/images/about-me.jpg";
 import aboutCastle from "../../public/images/about-castle.jpg";
@@ -9,8 +9,7 @@ import Instbox from "../../features/about/components/Instabox";
 import Twitterbox from "../../features/about/components/Twitterbox";
 import Emailbox from "../../features/about/components/Emailbox";
 
-// ページのタイトルを設定
-export const metadata = {
+export const metadata: Metadata = {
   title: "About Me...",
 };
 

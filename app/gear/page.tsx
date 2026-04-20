@@ -1,8 +1,8 @@
-import React from "react";
-import profile from "../../public/images/profile_image.png";
 import Image from "next/image";
+import type { Metadata } from "next";
+import profile from "../../public/images/profile_image.png";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "My Gear",
 };
 

@@ -1,8 +1,8 @@
-import React from "react";
+import type { Metadata } from "next";
 import { ErrorBoundary } from "react-error-boundary";
 import ProjectList from "../../features/projects/conponents/project-list";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "My Projects",
 };
 

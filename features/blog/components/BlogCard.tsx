@@ -1,8 +1,12 @@
-import React from "react";
 import Link from "next/link";
 import MarkdownImage from "./MarkdownImage";
+import type { Post } from "../../common/lib";
 
-const BlogCard = ({ posts }) => {
+type Props = {
+  posts: Post[];
+};
+
+const BlogCard = ({ posts }: Props) => {
   return (
     <div className="mt-10 space-y-16 mx-auto border-t border-gray-400 pt-10 sm:mt-16 sm:pt-16">
       {posts.map((post) => (
@@ -20,13 +24,11 @@ const BlogCard = ({ posts }) => {
             </Link>
           </div>
           <div className="group w-2/3 ml-8">
-            {/* 日付の表示 */}
             <div className="text-xs">
               <div className="text-gray-500">
                 {new Date(post.frontmatter.date).toLocaleDateString()}
               </div>
             </div>
-            {/* 記事タイトルへのリンク */}
             <Link
               href={`/blog/${post.slug}`}
               className="text-lg font-semibold leading-6 text-gray-100 group-hover:text-gray-400"
@@ -34,7 +36,6 @@ const BlogCard = ({ posts }) => {
               <h3 className="mt-3 text-lg sm:text-xl font-semibold leading-6 text-gray-100 group-hover:text-gray-400">
                 {post.frontmatter.title}
               </h3>
-              {/* 記事の説明文（description）を表示 */}
               <p
                 className="hidden  sm:mt-2 sm:line-clamp-3 sm:text-sm sm:leading-6 sm:text-gray-400"
                 dangerouslySetInnerHTML={{

@@ -1,8 +1,6 @@
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import Link from "next/link";
-import React from "react";
 
 const Instabox = () => {
   return (

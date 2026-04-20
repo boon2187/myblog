@@ -2,15 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "./../../../public/images/boon-logo.png";
 
 const HeaderMenu = () => {
-  // スマホメニューの開閉状態を管理するためのstate
   const [isOpen, setIsOpen] = useState(false);
-  // スマホメニューの開閉状態を切り替える関数
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };

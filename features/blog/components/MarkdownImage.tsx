@@ -1,12 +1,12 @@
-import React from "react";
-import matter from "gray-matter";
 import Image from "next/image";
 
-const MarkdownImage = ({ imageUrl, width, height }) => {
-  // const { data } = matter(markdown);
-  // const imageUrl = data.image;
-  // // console.log(width, height);
+type Props = {
+  imageUrl?: string;
+  width: number;
+  height: number;
+};
 
+const MarkdownImage = ({ imageUrl, width, height }: Props) => {
   return (
     <div>
       {imageUrl && (

@@ -1,7 +1,8 @@
+import type { Metadata } from "next";
 import BlogCard from "../../features/blog/components/BlogCard";
 import { getAllPosts } from "../../features/common/lib";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "My Blog",
 };
 

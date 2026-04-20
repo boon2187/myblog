@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cacheLife } from "next/cache";
 
 type GitHubRepo = {
   id: number;
@@ -9,6 +10,8 @@ type GitHubRepo = {
 };
 
 const ProjectList = async () => {
+  "use cache";
+  cacheLife("hours");
   const response = await fetch("https://api.github.com/users/boon2187/repos");
   const repos: GitHubRepo[] = await response.json();
 

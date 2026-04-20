@@ -8,11 +8,18 @@ import remarkBreaks from "remark-breaks";
 import type { Metadata } from "next";
 import "./content.css";
 import MarkdownImage from "../../../features/blog/components/MarkdownImage";
+import { getAllPosts } from "../../../features/common/lib";
 import type { PostFrontmatter } from "../../../features/common/lib";
+
+export async function generateStaticParams() {
+  const posts = await getAllPosts();
+  return posts.map((post) => ({ slug: post.slug }));
+}
 
 export async function generateMetadata(
   props: PageProps<"/blog/[slug]">
 ): Promise<Metadata> {
+  "use cache";
   const { slug } = await props.params;
   const filePath = path.join(process.cwd(), "content", `${slug}.md`);
 
@@ -31,6 +38,7 @@ export async function generateMetadata(
 }
 
 export default async function BlogPage(props: PageProps<"/blog/[slug]">) {
+  "use cache";
   const { slug } = await props.params;
   const filePath = path.join(process.cwd(), "content", `${slug}.md`);
 

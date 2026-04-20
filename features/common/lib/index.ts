@@ -17,6 +17,7 @@ export type Post = {
 
 // マークダウンファイルの中身を取得
 export const getAllPosts = async (): Promise<Post[]> => {
+  "use cache";
   const postsDirectory = path.join(process.cwd(), "content");
   const fileNames = fs.readdirSync(postsDirectory);
 

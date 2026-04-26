@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Instabox = () => {
   return (
-    <Link href="https://www.instagram.com/boon_boon/">
+    <Link href="https://www.instagram.com/boonboon2187/">
       <div className="flex rounded bg-neutral-900 py-3 h-20 items-center">
         <div className="py-1 px-3">
           <FontAwesomeIcon icon={faInstagram} size="2x" />

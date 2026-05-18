@@ -9,11 +9,23 @@ type GitHubRepo = {
   stargazers_count: number;
 };
 
+const VISIBLE_REPOS = [
+  "boon2187",
+  "myblog",
+  "vite-react-todo-app",
+  "oniwa_station_app",
+  "laravel-todo-app",
+] as const;
+
 const ProjectList = async () => {
   "use cache";
   cacheLife("hours");
   const response = await fetch("https://api.github.com/users/boon2187/repos");
-  const repos: GitHubRepo[] = await response.json();
+  const allRepos: GitHubRepo[] = await response.json();
+  const repoByName = new Map(allRepos.map((repo) => [repo.name, repo]));
+  const repos = VISIBLE_REPOS.map((name) => repoByName.get(name)).filter(
+    (repo): repo is GitHubRepo => repo !== undefined
+  );
 
   return (
     <ul className="text-white grid grid-cols-1 sm:grid-cols-2 gap-4">
